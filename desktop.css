@@ -1,0 +1,25 @@
+.nav-logo{
+    text-align: left;
+}
+.nav-heading{
+    text-align: right;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    padding: 5px 10px;
+    margin: 20px 0;
+}
+/*about me starts here*/
+.about-me-image{
+    margin-top: 100px;
+}
+
+
+/*about me ends here*/
+.contact button{
+    border: none;
+    width: 150px;
+}

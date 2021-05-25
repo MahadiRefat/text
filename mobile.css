@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+  /* navbar starts here */
+ .navbar h1{
+     color: white;
+     margin: 0;
+     padding-top: 10px;
+ }
+ .navbar-menu{
+     display: flex;
+     flex-direction: column;
+     text-transform: uppercase;
+ }
+ p{
+     font-size: 1.2rem;
+     text-align: justify;
+ }
+a{
+    color: beige;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.navbar{
+    background-color: darkcyan;
+    padding: 1% 7%;
+    text-align: center;
+}
+.navbar-menu a{
+    background-color: darkslategrey;
+    border-radius: 10px;
+    margin: 7px;
+    padding: 10px;
+}
+.navbar-menu a:hover{
+    background-color: black;
+    color: red;
+}
+/* navbar ends here*/
+
+/*profile starts here*/
+ .profiles{
+     padding: 130px 10px;
+     position: relative;
+     text-align: center;
+ }
+ .profiles .top-weather-icon{
+     position: absolute;
+     right: 60px;
+     top: 40px;
+     height: 100px;
+     transition: transform 2s;
+ }
+ .profiles .top-weather-icon:hover{
+     transform: rotate(360deg);
+ }
+ .profile-desc h1{
+ font-size: 3rem;
+ font-family: 'Satisfy', cursive;
+ }
+ .profile-desc p{
+     color: darkgray;
+     margin: 0 auto 20px auto;
+     text-align: center;
+     width: 90%;
+     font-style:italic;
+     font-size: 1.5rem;  
+ }
+ .profiles .botton-weather-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    height: 100px;
+    transition: transform 2s;   
+}
+.profiles .botton-weather-icon:hover{
+    transform: rotate(360deg);
+    
+}
+/*profile ends here*/
+
+/*about me starts here*/
+.about-me{
+    background-color: rgb(28, 180, 180);
+    padding: 1% 7%;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+}
+.about-me-image img{
+   border: 5px solid white;
+   border-radius: 50%;
+   height: 220px;
+   width: 200px;
+}
+.about-me p{
+    text-align: center;
+}
+.cv-button{
+    background-color: black;
+    color: floralwhite;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+/*about me ends here*/
+
+/*professional stars here*/
+ .professional-experience{
+     padding: 1% 0%;
+ }  
+ .professional-experience .card{
+     background-color: lightgrey;
+     border-radius: 10px;
+     width: 500px;
+     margin: 10px;
+     box-sizing: border-box;
+     box-shadow: 2px 4px 8px deeppink;
+     
+ } 
+  .card:hover{
+     box-shadow: 6px 12px 10px  gold;
+     width: 1300px;
+ }
+ .rio:hover{
+   width: 1300px;
+ }
+ .card-icon{
+   text-align: center;
+ } 
+ .card-icon img{
+     margin-top: 20px;
+     width: 200px;
+ } 
+ .round-img{
+     border: 5px solid brown;
+     border-radius: 100%;    
+ }
+ .card-title{
+     background-color: dimgrey;
+     color: white;
+     padding: 10px;
+     text-align: center;
+ }
+ .card-containers{
+     box-sizing: border-box;
+     display: flex;
+ }
+ *{
+    box-sizing: border-box;
+  }
+  .rio{
+    background-color: black;
+    width: 500px;
+    padding: 20px;
+  }
+  .rio li{
+    list-style-type: none;
+    margin: 50px 0;
+    color: aqua;
+    font-weight: bolder;
+    position: relative;
+  }
+  .rio li::before{
+    content:'';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color:lightgray;
+    width: 100%;
+    height: 25px;
+    border-radius: 1000px;
+  }
+  .rio li::after{
+    content:'';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color:hotpink;
+    width: 0;
+    height: 25px;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction:forward;
+  }
+  .rio li.html::after{
+    animation-name: html;
+  }
+  @keyframes html{
+    to{
+      width: 90%;
+      background-color: orange;
+    }
+  }
+  .rio li.css::after{
+    animation-name: css;
+  }
+  @keyframes css{
+    to{
+      width: 80%;
+      background-color: rgb(207, 33, 33);
+    }
+  }
+  .rio li.js::after{
+    animation-name: js;
+  }
+  @keyframes js{
+    to{
+      width: 75%;
+      background-color: deeppink;
+    }
+  }
+  .rio li.bootstrap::after{
+    animation-name:bootstrap;
+  }
+  @keyframes bootstrap{
+    to{
+      width: 85%;
+      background-color: lightseagreen;
+    }
+  }
+  .rio li.java::after{
+    animation-name: java;
+  }
+  @keyframes java{
+    to{
+      width: 70%;
+      background-color: greenyellow;
+    }
+  }
+  .rio li.c::after{
+    animation-name: c;
+  }
+  @keyframes c{
+    to{
+      width: 87%;
+      background-color: goldenrod;
+    }
+  }
+  
+ 
+ /*professional ends here*/
+
+ /*contact starts here*/
+.achievement-contact{
+    padding: 1% 7%;
+    background-color: darkcyan;
+    color: white;
+}
+.contact{
+    padding: 1% 7%;
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.contact button{
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+}
+.achievement-contact:hover{
+  width: 1300px;
+}
+ /*contact ends here*/
+ .media-buttons{
+   background-color: rgb(219, 22, 121);
+ }
+ .footer{
+   background-color: black;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   font-size: 1rem;
+ }
+ .footer-menu a{
+   display: block;
+   margin: 15px 0;
+   font-size: 1rem;
+ }
+ .footer-menu a:hover{
+  color: aqua;
+}
+    
