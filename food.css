@@ -1,0 +1,183 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    /*-font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;--*/
+
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    clear:both;
+    content:'';
+    display: block;
+}
+/*header starts here*/
+header{
+    background-color: darkcyan;
+    padding: 0% 1%;
+    text-align: center;
+}
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: 2s;
+}
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: black;
+}
+
+/*header ends here*/
+
+/*banner starts here*/
+ #banner-section{
+     background-image:url("images/hotal.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ .banner-contents{
+     padding: 50px 10px;
+     text-align: center;
+ }
+ .banner-contents h1{
+   width: 100%;
+   margin: 15px auto;
+   font-size: 3rem;
+   background-color: gold; 
+   color: rgb(209, 14, 151);
+   border-radius: 10px;
+   padding: 10px;
+   font-family: 'Handlee', cursive;
+ }
+ .banner-contents p{
+     width: 300px;
+     margin: 15px auto;
+     background-color: green;
+     color: white;
+     height: 50px;
+     padding: 10px;
+     font-size: 1.5rem;
+ }
+ .btn{
+     width: 160px;
+     height: 50px;
+     font-size: 1.3rem;
+     border: none;
+     border-radius: 20px;
+     background-color: black;
+     color: white;
+     text-transform: uppercase;
+     transition: 2s;
+ }
+ .btn:hover{
+     transform: scale(1.2);
+     box-shadow: 0 16px 32px 0 aqua;
+     color: rgb(221, 44, 44);
+ }
+/*banner ends here*/
+
+/*about us starts*/
+#about-us{
+    padding: 1%;
+}
+.about-us-contents{
+    text-align: center;
+}
+.about-us-contents h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lightslategrey;
+}
+.about-us-contents p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color:darkgray ;
+}
+.about-us-contents h3:hover{
+   background-color: purple;
+}
+/*about us ends*/
+
+/*food-menu stars*/
+#menu-section{
+    padding: 1%;
+}
+
+.card-body img{
+    max-width: 1000px;
+    display: block;
+}
+.item-desc{
+    background-color:lightgrey ;
+    width: 500px;
+    text-align: center;
+}
+.item-name{
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.item-desc > p{
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.card{
+    transition: 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+/*food-menu stars*/
+/*contact starts*/
+ #contact{
+     padding: 1%;
+   background-color:#595b83 ;
+ }
+ .map{
+     width: 100%;
+     height: 250px;
+ }
+ .contact-details{
+     color: white;
+     text-align: center;
+     padding: 20px 0;
+ }
+ .contact-details p, address{
+     font-size: 1rem;
+ }
+/*contact starts*/
+footer{
+    padding: 1%;
+    color: white;
+    background-color: navy;
+}
+footer p{
+    line-height: 35px;
+    font-size: 1rem;
+    text-align: center;
+}
